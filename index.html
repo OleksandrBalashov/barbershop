@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BarberShop</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
@@ -78,7 +78,7 @@
         <!-- Hero Section -->
         <section class="hero">
           <div class="container-hero">
-            <h1 class="hero-title">A hair salon for men in Kyiv</h1>
+            <h1 class="section-title">A hair salon for men in Kyiv</h1>
             <h2 class="hero-name">BarberShop</h2>
             <p class="hero-text">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
@@ -88,6 +88,79 @@
         </section>
       </div>
     </div>
+
+    <main>
+      <!-- Про Нас -->
+      <section class="section about-us-section">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="container">
+          <div class="first-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./images/about-us/about-desktop-1.webp    1200w,
+                  ./images/about-us/about-desktop-1@2x.webp 2400w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1600px) 1600px, (min-width: 1200px) 1200px, (min-width: 768px) 768px,100vw"
+              />
+              <source
+                srcset="
+                  ./images/about-us/about-1.webp     768w,
+                  ./images/about-us/about-1@2x.webp 1536w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 1600px) 1600px, (min-width: 1200px) 1200px, (min-width: 768px) 768px, 100vw"
+              />
+              <img
+                class="first-img"
+                src="./images/about-us/about-desktop-1.jpg"
+                alt="бритье"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  ./images/about-us/about-desktop-2.webp    1200w,
+                  ./images/about-us/about-desktop-2@2x.webp 2400w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1600px) 1600px, (min-width: 1200px) 1200px, (min-width: 768px) 768px,100vw"
+              />
+              <source
+                srcset="
+                  ./images/about-us/about-2.webp     768w,
+                  ./images/about-us/about-2@2x.webp 1536w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 1600px) 1600px, (min-width: 1200px) 1200px, (min-width: 768px) 768px, 100vw"
+              />
+              <img
+                class="second-img"
+                src="./images/about-us/about-desktop-2.jpg"
+                alt="бритье"
+              />
+            </picture>
+          </div>
+          <div class="second-wrapper">
+            <h2 class="section-title">О нас</h2>
+            <h3 class="section-subtitle">Лучший Барбершоп твоего города</h3>
+            <p class="section-text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="section-secondary-text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="button">Онлайн-запись</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/menu.js"></script>
   </body>
 </html>
