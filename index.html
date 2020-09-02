@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+        <header class="header">
+          <nav class="head-nav">
+            <div class="logo-wrapper">
+              <a href="" class="logo">
+                <svg width="69" height="55" class="logo">
+                  <use href="./images/svg/sprite.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <button
+                class="menu-button"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="кнока меню"
+                  class="icon-menu-open"
+                >
+                  <use href="./images/svg/sprite.svg#icon-menu-open"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="mobile-container" id="menu-container" data-menu>
+              <button
+                class="menu-button"
+                aria-label="кнока меню"
+                data-menu-button-close
+              >
+                <svg width="40" height="40" class="icon-menu-close">
+                  <use href="./images/svg/sprite.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+              <ul class="header-nav">
+                <li class="header-item"><a href="">О нас</a></li>
+                <li class="header-item"><a href="">Услуги и цены</a></li>
+                <li class="header-item"><a href="">Мастера</a></li>
+                <li class="header-item"><a href="">Контакты</a></li>
+              </ul>
+
+              <ul class="header-address">
+                <li class="item">
+                  <a href="tel:+380441111111">+38 044 111 11 11</a>
+                </li>
+                <li>
+                  <button class="button">Онлайн-запись</button>
+                </li>
+              </ul>
+
+              <ul class="socials-header">
+                <li class="social-item"><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="container-hero">
+            <h1 class="hero-title">A hair salon for men in Kyiv</h1>
+            <h2 class="hero-name">BarberShop</h2>
+            <p class="hero-text">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
