@@ -1,0 +1,91 @@
+.prices-section {
+  .section-subtitle {
+    font-family: $second-font-family;
+    font-size: 42px;
+    line-height: 1.17;
+
+    color: $white;
+
+    margin-bottom: 44px;
+  }
+
+  .button {
+    color: $white;
+    display: block;
+    padding: 11px 20px;
+    margin: 0 auto;
+  }
+}
+
+.common-container {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    padding: 30px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    background: 0;
+
+    .first-list {
+      padding: 30px 40px;
+      width: 50%;
+      background: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
+    }
+
+    .second-list {
+      padding: 30px 40px;
+      width: 50%;
+      background: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
+  }
+
+  .prices-list {
+    @extend %list;
+    font-size: 14px;
+    line-height: 2.14;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: 1.67;
+    }
+  }
+}
+
+.first-list {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .prices-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    margin: 0 6px 8px;
+  }
+}

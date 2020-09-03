@@ -272,11 +272,13 @@
   bottom: 0;
   background-color: $orange;
   border-radius: 25px;
+
   transition: 250ms linear;
   z-index: -1;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   height: 100%;
 }
 

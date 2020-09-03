@@ -63,9 +63,6 @@
     font-size: 42px;
     line-height: 1.18;
   }
-  @media screen and (max-width: 767px) {
-    width: 330px;
-  }
 }
 
 .section-text {
@@ -93,6 +90,11 @@
 }
 
 .second-wrapper {
+  @media screen and (max-width: 767px) {
+    .section-subtitle {
+      width: 330px;
+    }
+  }
   .button {
     color: $secondary-text-color;
     padding: 11px 20px;
