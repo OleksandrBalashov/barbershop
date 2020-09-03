@@ -39,57 +39,64 @@
 }
 
 .second-wrapper {
-  width: 50%;
-  margin-left: 15px;
-
-  .section-subtitle {
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-
-    font-weight: 700;
-    font-family: $second-font-family;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-
-    color: $title-color;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 42px;
-      line-height: 1.18;
-    }
-  }
-
-  .section-text {
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-
-    color: $secondary-text-color;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 18px;
-      line-height: 1.67;
-    }
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-left: 15px;
   }
 }
 
-.second-wrapper {
-  .section-secondary-text {
-    margin: 0;
-    margin-bottom: 40px;
-    padding: 0;
+.section-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 
-    font-size: 14px;
-    line-height: 1.86;
+  font-weight: 700;
+  font-family: $second-font-family;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 
-    color: $secondary-text-color;
+  color: $title-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: 1.18;
   }
+  @media screen and (max-width: 767px) {
+    width: 330px;
+  }
+}
 
+.section-text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.section-secondary-text {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.86;
+
+  color: $secondary-text-color;
+}
+
+.second-wrapper {
   .button {
     color: $secondary-text-color;
+    padding: 11px 20px;
+
     margin-bottom: 0;
   }
 }
