@@ -8,6 +8,10 @@
   }
   .section-title {
     color: $title-color;
+
+    &::before {
+      background-color: $title-color;
+    }
   }
 
   .section-subtitle {

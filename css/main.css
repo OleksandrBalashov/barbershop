@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-.header-nav, .header-address, .socials-header, .common-container .prices-list, .second-wrap .features-list, .team-list, .socials-list {
+.header-nav, .header-address, .socials-header, .common-container .prices-list, .second-wrap .features-list, .team-list, .socials-list, .process-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -780,6 +780,10 @@ body {
   color: #303030;
 }
 
+.section-features .section-title::before {
+  background-color: #303030;
+}
+
 .section-features .section-subtitle {
   max-width: 420px;
   font-size: 42px;
@@ -900,6 +904,10 @@ body {
   color: #303030;
 }
 
+.section-team .section-title::before {
+  background-color: #303030;
+}
+
 .section-team .section-subtitle {
   margin-bottom: 44px;
 }
@@ -976,5 +984,44 @@ body {
 
 .socials-list .social-icon:hover, .socials-list .social-icon:hover {
   color: #ff6c00;
+}
+
+.process-section .section-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.process-section .section-title::before {
+  background-color: #303030;
+}
+
+.process-list {
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .process-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .process-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.process-list .process-item {
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .process-list .process-item {
+    -ms-flex-preferred-size: calc((100% - 15px * 4) / 2);
+        flex-basis: calc((100% - 15px * 4) / 2);
+  }
 }
 /*# sourceMappingURL=main.css.map */

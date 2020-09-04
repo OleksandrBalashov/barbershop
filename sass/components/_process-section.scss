@@ -1,0 +1,31 @@
+.process-section {
+  .section-title {
+    color: $title-color;
+    margin-bottom: 44px;
+
+    &::before {
+      background-color: $title-color;
+    }
+  }
+}
+
+.process-list {
+  @extend %list;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  .process-item {
+    margin: 15px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: calc((100% - 15px * 4) / 2);
+    }
+  }
+}
