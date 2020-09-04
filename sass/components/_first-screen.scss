@@ -12,8 +12,8 @@
     background-image: url('../images/overlay/overlay-mobile@2x.jpg');
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 1199px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     height: 680px;
     background-image: url('../images/overlay/overlay-desktop.jpg');
 
@@ -24,8 +24,8 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
     height: 680px;
     background-image: url('../images/overlay/overlay-desktop.jpg');
 
