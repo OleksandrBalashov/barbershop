@@ -27,3 +27,39 @@
     padding: 130px 0;
   }
 }
+
+.wrapper {
+  @media screen and (max-width: 1199px) {
+    .section.form-section {
+      display: none;
+    }
+
+    .section.contacts-section {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-color: $bg-form-color;
+
+    .section.form-section {
+      display: block;
+    }
+
+    .section.contacts-section {
+      display: block;
+    }
+
+    > .container {
+      display: flex;
+
+      .form-section {
+        width: 51%;
+      }
+
+      .contacts-section {
+        width: 49%;
+      }
+    }
+  }
+}

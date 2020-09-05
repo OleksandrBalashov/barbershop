@@ -1,4 +1,14 @@
 .form-section {
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.form-section {
   background-color: $bg-form-color;
   .button {
     color: $white;
@@ -70,11 +80,11 @@
     .form-input {
       flex-basis: 50%;
 
-      &.padding-right {
+      &:first-child {
         padding-right: 15px;
       }
 
-      &.padding-left {
+      &:last-child {
         padding-left: 15px;
       }
     }
