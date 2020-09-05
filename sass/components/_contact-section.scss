@@ -48,8 +48,14 @@
     }
 
     .icon-address {
+      --color2: currentColor;
       vertical-align: middle;
       margin-right: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $orange;
     }
   }
 

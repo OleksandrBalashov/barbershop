@@ -29,6 +29,7 @@
 }
 
 .wrapper {
+  overflow: hidden;
   @media screen and (max-width: 1199px) {
     .section.form-section {
       display: none;

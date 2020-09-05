@@ -113,6 +113,10 @@ textarea {
   }
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1199px) {
   .wrapper .section.form-section {
     display: none;
@@ -1085,6 +1089,7 @@ textarea {
 
 .form-section .button {
   color: #ffffff;
+  padding: 12px 38px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1215,8 +1220,6 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    display: block;
     content: '';
     width: 150%;
     height: 100%;
@@ -1225,7 +1228,6 @@ textarea {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    pointer-events: none;
     z-index: -1;
   }
 }
@@ -1324,8 +1326,13 @@ textarea {
 }
 
 .address .address-link .icon-address {
+  --color2: currentColor;
   vertical-align: middle;
   margin-right: 12px;
+}
+
+.address .address-link:hover, .address .address-link:focus {
+  color: #ff6c00;
 }
 
 .address .address-link:not(:last-child) {
