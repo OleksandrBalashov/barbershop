@@ -9,12 +9,12 @@
   overflow: hidden;
 }
 
-.logo, .header-nav a, .header-address a, .socials-header a, .socials-list .social-icon, .address .address-link {
+.logo, .header-nav a, .header-address a, .socials-header a, .socials-list .social-icon, .address .address-link, .socials-footer .social-item a {
   display: block;
   text-decoration: none;
 }
 
-.header-nav, .header-address, .socials-header, .common-container .prices-list, .second-wrap .features-list, .team-list, .socials-list, .process-list {
+.header-nav, .header-address, .socials-header, .common-container .prices-list, .second-wrap .features-list, .team-list, .socials-list, .process-list, .socials-footer {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1319,6 +1319,8 @@ textarea {
   font-size: 18px;
   line-height: 1.67;
   color: inherit;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
 }
 
 .address .address-link:last-child {
@@ -1373,5 +1375,81 @@ textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.footer {
+  padding: 44px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.footer .container .copyright {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container .copyright {
+    margin-right: auto;
+  }
+}
+
+.socials-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .socials-footer {
+    margin-bottom: 20px;
+  }
+}
+
+.socials-footer .social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.socials-footer .social-item a {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  color: #303030;
+}
+
+.socials-footer .social-item a:hover, .socials-footer .social-item a:focus {
+  color: #ff6c00;
+}
+
+.socials-footer .social-item a.line::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 40px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=main.css.map */
